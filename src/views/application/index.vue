@@ -1,16 +1,17 @@
 <template>
       <b-row class="toolbar">
-        <v-toolbar class="shadow-sm justify-content-evenly">
+        <v-toolbar class="shadow-sm w-100" style="justify-content: center !important;">
           <v-toolbar-title class="p-5">Estadia Express</v-toolbar-title>
-            <b-form-input class="w-50" placeholder="Pesquise pelo seu quarto">
-            </b-form-input>
-            <v-btn icon @click="">
-              <v-icon>mdi-magnify</v-icon>
-            </v-btn>
-         <div class="flex-row d-flex">
-           <b-button class="m-1">Entrar</b-button>
-           <b-button class="m-1">Anunciar quarto</b-button>
-         </div>
+          <b-form-input class="w-50" placeholder="Pesquise pelo seu quarto">
+          </b-form-input>
+          <v-btn icon @click="" class="p-3">
+            <v-icon>mdi-magnify</v-icon>
+          </v-btn>
+          <div class="flex-row d-flex">
+            <b-button class="m-1">Anunciar quarto</b-button>
+            <b-button class="m-1">Entrar</b-button>
+          </div>
+<!--          <v-avatar style="background-color: red"></v-avatar>-->
         </v-toolbar>
         <b-col class="container-fluid">
           <router-view/>
@@ -21,6 +22,10 @@
 <style scoped>
   .toolbar{
     padding-bottom: 1rem;
+  }
+
+  :deep(.v-toolbar__content){
+    justify-content: center;
   }
 </style>
 
