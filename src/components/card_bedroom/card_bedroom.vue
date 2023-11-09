@@ -1,5 +1,5 @@
 <template>
-  <b-row class="d-flex flex-row justify-content-center mt-5">
+  <b-row class="d-flex flex-row justify-content-center">
     <b-col v-for="i in listBedroom" lg="6" class="m-3 card-bedroom p-0">
       <div class="card-image w-100 h-50">
         <img src="../../assets/images/bedroom.jpeg" alt="key" class="image-bedroom">

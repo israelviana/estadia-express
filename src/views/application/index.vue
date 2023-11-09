@@ -11,7 +11,6 @@
             <b-button class="m-1">Anunciar quarto</b-button>
             <b-button class="m-1">Entrar</b-button>
           </div>
-<!--          <v-avatar style="background-color: red"></v-avatar>-->
         </v-toolbar>
         <b-col class="container-fluid">
           <router-view/>
