@@ -14,7 +14,9 @@
     <b-card-text class="w-100 mt-5 border-0 justify-content-center flex-column text-center align-center">
       <h2>Confira abaixo nossos principais quartos!</h2>
     </b-card-text>
-    <card_bedroom :list-bedroom="listBedroom"/>
+   <b-col>
+     <card_bedroom :list-bedroom="listBedroom"/>
+   </b-col>
   </b-col>
 </template>
 

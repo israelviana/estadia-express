@@ -8,7 +8,7 @@
             <v-icon>mdi-magnify</v-icon>
           </v-btn>
           <div class="flex-row d-flex">
-            <b-button class="m-1">Anunciar quarto</b-button>
+            <b-button class="m-1" @click="goToPageBedrooms">Ver quartos</b-button>
             <b-button class="m-1">Entrar</b-button>
           </div>
         </v-toolbar>
@@ -36,5 +36,10 @@ export default {
   data() {
     return {}
   },
+  methods:{
+    goToPageBedrooms(){
+      this.$router.push('../application/bedrooms')
+    }
+  }
 }
 </script>
