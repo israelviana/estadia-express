@@ -1,7 +1,7 @@
 <template>
       <b-row class="toolbar">
         <v-toolbar class="shadow-sm w-100" style="justify-content: center !important;">
-          <v-toolbar-title class="p-5">Estadia Express</v-toolbar-title>
+          <v-toolbar-title class="p-5" @click="goToHome" style="cursor: pointer">Estadia Express</v-toolbar-title>
           <b-form-input class="w-50" placeholder="Pesquise pelo seu quarto">
           </b-form-input>
           <v-btn icon @click="" class="p-3">
@@ -38,7 +38,10 @@ export default {
   },
   methods:{
     goToPageBedrooms(){
-      this.$router.push('../application/bedrooms')
+      this.$router.push('../application/bedrooms').catch(() => {})
+    },
+    goToHome(){
+      this.$router.push('../application/home_page').catch(()=> {})
     }
   }
 }
